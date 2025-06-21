@@ -66,9 +66,10 @@
         <sonar-maven-plugin.version>5.1.0.4751</sonar-maven-plugin.version>
     </properties>
     <modules>
-        <module>N0_01_singleton</module>
+        <module>No_01_singleton</module>
         <module>No_03_abstract-factory</module>
         <module>No_101_abstract-document</module>
+        <module>No_02_factory-method</module>
     </modules>
     <dependencyManagement>
         <dependencies>
