@@ -67,9 +67,10 @@
     </properties>
     <modules>
         <module>No_01_singleton</module>
-        <module>No_03_abstract-factory</module>
-        <module>No_101_abstract-document</module>
         <module>No_02_factory-method</module>
+        <module>No_03_abstract-factory</module>
+        <module>No_04_builder</module>
+        <module>No_101_abstract-document</module>
     </modules>
     <dependencyManagement>
         <dependencies>
