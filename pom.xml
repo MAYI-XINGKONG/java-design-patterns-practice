@@ -70,6 +70,9 @@
         <module>No_02_factory-method</module>
         <module>No_03_abstract-factory</module>
         <module>No_04_builder</module>
+        <module>No_05_adapter</module>
+        <module>No_06_decorator</module>
+        <module>No_07_observer</module>
         <module>No_101_abstract-document</module>
     </modules>
     <dependencyManagement>

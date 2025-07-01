@@ -1,0 +1,10 @@
+@startuml
+interface Immortal {
++attack()
++getPower()
++retreat()
+}
+Immortal <|-- BasicImmortal
+BasicImmortal <|-- SwordDecorator
+BasicImmortal <|-- ShieldDecorator
+@enduml
