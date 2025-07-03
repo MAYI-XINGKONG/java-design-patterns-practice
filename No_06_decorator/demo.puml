@@ -1,10 +1,35 @@
 @startuml
-interface Immortal {
-+attack()
-+getPower()
-+retreat()
+class com.niudada.BasicImmortal {
++ void attack()
++ int getPower()
++ void retreat()
 }
-Immortal <|-- BasicImmortal
-BasicImmortal <|-- SwordDecorator
-BasicImmortal <|-- ShieldDecorator
+
+interface com.niudada.Immortal {
+~ void attack()
+~ int getPower()
+~ void retreat()
+}
+
+class com.niudada.SwordDecorator {
+- Immortal decoratedImmortal
++ void attack()
++ int getPower()
++ void retreat()
+}
+
+
+class com.niudada.ShieldDecorator {
+- Immortal decoratedImmortal
++ void attack()
++ int getPower()
++ void retreat()
+}
+
+
+
+
+com.niudada.Immortal <|.. com.niudada.BasicImmortal
+com.niudada.Immortal <|.. com.niudada.SwordDecorator
+com.niudada.Immortal <|.. com.niudada.ShieldDecorator
 @enduml

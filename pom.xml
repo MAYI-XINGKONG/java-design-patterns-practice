@@ -74,6 +74,7 @@
         <module>No_06_decorator</module>
         <module>No_07_observer</module>
         <module>No_101_abstract-document</module>
+        <module>No_08_strategy</module>
     </modules>
     <dependencyManagement>
         <dependencies>

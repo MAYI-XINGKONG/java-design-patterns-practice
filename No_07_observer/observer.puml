@@ -1,0 +1,33 @@
+@startuml
+class com.niudada.subject.Weather {
+- WeatherType currentWeather
+- List<WeatherObserver> observers
++ void addObserver(WeatherObserver)
++ void removeObserver(WeatherObserver)
++ void timePasses()
+- void notifyObservers()
+}
+
+
+interface com.niudada.observer.interfaces.WeatherObserver {
+~ void update(WeatherType)
+}
+
+class com.niudada.observer.PhoneApp {
++ void update(WeatherType)
+}
+
+class com.niudada.observer.RadioStation {
++ void update(WeatherType)
+}
+
+class com.niudada.observer.SmartDevice {
++ void update(WeatherType)
+}
+
+
+
+com.niudada.observer.interfaces.WeatherObserver <|.. com.niudada.observer.PhoneApp
+com.niudada.observer.interfaces.WeatherObserver <|.. com.niudada.observer.RadioStation
+com.niudada.observer.interfaces.WeatherObserver <|.. com.niudada.observer.SmartDevice
+@enduml
