@@ -1,0 +1,30 @@
+@startuml
+class com.niudada.strategy.AliPayStrategy {
++ void pay(int)
+}
+
+interface com.niudada.strategy.interfaces.PaymentStrategy {
+~ void pay(int)
+}
+
+class com.niudada.strategy.BankCardStrategy {
++ void pay(int)
+}
+
+class com.niudada.pay.Payment {
+- PaymentStrategy strategy
++ void changePaymentStrategy(PaymentStrategy)
++ void toPay(int)
+}
+
+
+class com.niudada.strategy.WeChatPayStrategy {
++ void pay(int)
+}
+
+
+
+com.niudada.strategy.interfaces.PaymentStrategy <|.. com.niudada.strategy.AliPayStrategy
+com.niudada.strategy.interfaces.PaymentStrategy <|.. com.niudada.strategy.BankCardStrategy
+com.niudada.strategy.interfaces.PaymentStrategy <|.. com.niudada.strategy.WeChatPayStrategy
+@enduml
