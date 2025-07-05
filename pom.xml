@@ -73,9 +73,10 @@
         <module>No_05_adapter</module>
         <module>No_06_decorator</module>
         <module>No_07_observer</module>
-        <module>No_101_abstract-document</module>
         <module>No_08_strategy</module>
         <module>No_09_template-method</module>
+        <module>No_10_prototype</module>
+        <module>No_101_abstract-document</module>
     </modules>
     <dependencyManagement>
         <dependencies>
