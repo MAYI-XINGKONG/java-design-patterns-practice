@@ -1,0 +1,51 @@
+@startuml
+interface com.niudada.sku.base.SkuFactory {
+~ ProductSku createProductSku()
+}
+
+interface com.niudada.sku.base.Prototype {
+~ T copy()
+}
+
+abstract class com.niudada.sku.base.ProductSku {
+- String id
+- String name
+- BigDecimal price
+- Integer stock
++ String toString()
+}
+
+
+class com.niudada.sku.base.ElectronicSku {
+- String model
+- int warrantyPeriod
++ void setModel(String)
++ void setWarrantyPeriod(int)
++ ProductSku copy()
++ String toString()
+}
+
+
+class com.niudada.sku.base.SkuFactoryImpl {
+- ProductSku productSku
++ ProductSku createProductSku()
+}
+
+
+class com.niudada.sku.base.ClothingSku {
+- String size
+- String color
++ void setSize(String)
++ void setColor(String)
++ ProductSku copy()
++ String toString()
+}
+
+
+
+
+com.niudada.sku.base.Prototype <|.. com.niudada.sku.base.ProductSku
+com.niudada.sku.base.ProductSku <|-- com.niudada.sku.base.ElectronicSku
+com.niudada.sku.base.SkuFactory <|.. com.niudada.sku.base.SkuFactoryImpl
+com.niudada.sku.base.ProductSku <|-- com.niudada.sku.base.ClothingSku
+@enduml
