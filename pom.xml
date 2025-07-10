@@ -76,6 +76,8 @@
         <module>No_08_strategy</module>
         <module>No_09_template-method</module>
         <module>No_10_prototype</module>
+        <module>No_11_proxy</module>
+        <module>No_12_composite</module>
         <module>No_101_abstract-document</module>
     </modules>
     <dependencyManagement>
