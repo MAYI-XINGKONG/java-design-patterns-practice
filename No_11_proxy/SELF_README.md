@@ -111,6 +111,10 @@ RealService proxy = (RealService) enhancer.create();
 
 ## 📚 四、场景Demo总览
 
+> 选择性学习即可，目的是理解，不用`necessarily`全部学习
+> 
+> ⚠️另外这些demo也不一定准确，如果存在错误，请多包涵
+
 | 编号 | 场景 | 目标 |
 |----|------|------|
 | 1  | 权限控制代理 | 控制用户访问敏感资源 |
