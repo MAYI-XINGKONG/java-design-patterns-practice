@@ -78,6 +78,7 @@
         <module>No_10_prototype</module>
         <module>No_11_proxy</module>
         <module>No_12_composite</module>
+        <module>No_13_command</module>
         <module>No_101_abstract-document</module>
     </modules>
     <dependencyManagement>
@@ -323,6 +324,15 @@
                             <version>1.17.0</version> <!-- Optional: choose the GJF version -->
                         </googleJavaFormat>
                     </java>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>17</source> <!-- Java源码版本 -->
+                    <target>17</target> <!-- 目标Java版本 -->
                 </configuration>
             </plugin>
         </plugins>

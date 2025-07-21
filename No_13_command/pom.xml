@@ -9,7 +9,7 @@
         <version>1.26.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>No_02_factory-method</artifactId>
+    <artifactId>No_13_command</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
