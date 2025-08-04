@@ -79,6 +79,7 @@
         <module>No_11_proxy</module>
         <module>No_12_composite</module>
         <module>No_13_command</module>
+        <module>No_14_chain</module>
         <module>No_101_abstract-document</module>
     </modules>
     <dependencyManagement>
