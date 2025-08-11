@@ -81,6 +81,7 @@
         <module>No_13_command</module>
         <module>No_14_chain</module>
         <module>No_15_mediator</module>
+        <module>No_16_state</module>
         <module>No_101_abstract-document</module>
     </modules>
     <dependencyManagement>
