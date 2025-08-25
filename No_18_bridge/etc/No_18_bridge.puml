@@ -1,0 +1,44 @@
+@startuml
+class com.niudada.pay.WeChatPay {
++ void pay(double)
+}
+
+class com.niudada.pay.Fingerprint {
++ void verify()
++ String getVerificationType()
+}
+
+abstract class com.niudada.pay.PaymentMethod {
+# PaymentVerification verification
++ {abstract}void pay(double)
++ PaymentVerification getVerification()
+}
+
+
+class com.niudada.pay.PasswordVerification {
++ void verify()
++ String getVerificationType()
+}
+
+class com.niudada.pay.Alipay {
++ void pay(double)
+}
+
+class com.niudada.pay.FaceRecognition {
++ void verify()
++ String getVerificationType()
+}
+
+interface com.niudada.pay.PaymentVerification {
+~ void verify()
+~ String getVerificationType()
+}
+
+
+
+com.niudada.pay.PaymentMethod <|-- com.niudada.pay.WeChatPay
+com.niudada.pay.PaymentVerification <|.. com.niudada.pay.Fingerprint
+com.niudada.pay.PaymentVerification <|.. com.niudada.pay.PasswordVerification
+com.niudada.pay.PaymentMethod <|-- com.niudada.pay.Alipay
+com.niudada.pay.PaymentVerification <|.. com.niudada.pay.FaceRecognition
+@enduml
